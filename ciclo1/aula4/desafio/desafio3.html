@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desafio 3</title>
+</head>
+<style>
+	body{
+		margin: 0;
+	}
+
+	header, footer{
+		width: 100%;
+		height: 40px;
+		border-bottom: 1px solid black;
+		background-color: tomato;
+		position: fixed;
+	}
+	header{
+		top:0;
+	}
+
+	footer{
+		border-bottom: 0;
+		height: 60px;
+		border-top: 1px solid black;
+		bottom: 0;
+	}
+
+	main{
+		width:80%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 40px;
+
+	}
+
+	#content{
+		width: 100%;
+
+		display: flex;
+	}
+	
+	.coluna{
+		width: 50%;
+		height: auto;
+	}
+	@media screen and (max-width: 700px) {
+		#content{
+			flex-direction: column;
+
+		}
+		.coluna{
+			width: 100%;
+		}
+		#quadrado{
+			display: none;
+		}
+	}
+
+	#quadrado{
+		width: 20px;
+		height: 20px;
+		border: 1px solid black;
+		background-color: tomato;
+	}
+</style>
+<body>
+	<header></header>
+	<main>
+		<div id="content">
+			<div class="coluna">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Vero sint rem odit sunt inventore excepturi doloribus. Maiores architecto corrupti asperiores ullam, sequi autem! Quis quae labore id perferendis. Nulla, in.
+				</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam accusantium, quis ducimus maxime. Sunt quisquam quia totam quibusdam unde a voluptate velit asperiores minima labore laudantium, nobis officia hic. Libero!
+				</p>
+
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. In iste consequatur maiores animi quis nisi perferendis, labore id excepturi quidem aperiam possimus deleniti eveniet incidunt dolor dolores similique veritatis. Ipsum?
+				</p>
+
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, expedita. Excepturi earum architecto repellendus qui harum accusantium hic libero unde? Alias sapiente adipisci eveniet? Atque quis voluptates exercitationem vero quo.
+				</p>
+			</div>
+			<div class="coluna">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, expedita. Excepturi earum architecto repellendus qui harum accusantium hic libero unde? Alias sapiente adipisci eveniet? Atque quis voluptates exercitationem vero quo.
+				</p>
+
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, expedita. Excepturi earum architecto repellendus qui harum accusantium hic libero unde? Alias sapiente adipisci eveniet? Atque quis voluptates exercitationem vero quo.
+				</p>
+
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, expedita. Excepturi earum architecto repellendus qui harum accusantium hic libero unde? Alias sapiente adipisci eveniet? Atque quis voluptates exercitationem vero quo.
+				</p>
+
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, expedita. Excepturi earum architecto repellendus qui harum accusantium hic libero unde? Alias sapiente adipisci eveniet? Atque quis voluptates exercitationem vero quo.
+				</p>
+			</div>
+		</div>
+		<div id="quadrado"></div>
+	</main>
+	<footer></footer>
+</body>
+</html>

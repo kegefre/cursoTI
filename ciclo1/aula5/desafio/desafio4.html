@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interação Escrita - Universidade Estadal de Maringá</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	header{
+		width: 100%;
+		height: auto;
+	}
+	#cabeca{
+		width: 100%;
+		height: 150px;
+		background-image: linear-gradient(to bottom,rgb(100, 200, 100),rgb(0,80,0));
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	footer{
+		width: 100%;
+		height: 50px;
+		border-top: 1px solid rgb(200,200,200);
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+		margin-top: 20px;
+	}
+
+	.tamanho1{
+		font-size: 100px;
+		color: green;
+	}
+
+	.tamanho2{
+		font-size: 140px;
+		color: green;
+	}
+	#cabeca-escrita{
+		z-index: 100;
+		width: 100%;
+		height: 150px;
+		position: absolute;
+		top: 0;
+		display: flex;
+		align-items: center;
+		font-family: Teko, sans-serif;
+	}
+
+	#logo{
+		width: 20%;
+		height: auto;
+	}
+
+	#logo img{
+		display: flex;
+		justify-content: center;
+	}
+
+	#logo p{
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		color: white;
+	}
+
+	#uem{
+		width: 90px;
+		margin: 0 auto;
+	}
+
+	#logo-desc{
+		width: 80%;
+		color: white;
+		font-size: 50px;
+	}
+
+	#logo-desc p{
+		display: flex;
+		justify-content: center;
+	}
+
+	nav{
+		background-color: black;
+		width: 100%;
+		height: 50px;
+		padding: 1px;
+	}
+
+	#itensMenus{
+		list-style: none;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.imenu{
+		font-family: verdana, arial, sans-serif;
+		padding: 2px;
+		margin-top: 2px;
+		width: 120px;
+		height: 100%;
+		
+		box-sizing: border-box;
+
+	}
+
+	.imenu:hover{
+		background-color: rgb(30,30,30);
+	}
+
+	.linkMenu{
+		text-decoration: none;
+		color: #fff;
+		width: 100px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2px;
+		border-radius: 15px;
+	}
+
+	main{
+		margin: 0 auto;
+		width: 80%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+
+	}
+
+	.coluna{
+		width: 50%;
+		height: auto;
+		font-size: 18px;
+	}
+
+	.margin-left{
+		margin-left: 20px;
+	}
+	main h2{
+		border-bottom: 1px solid rgb(200,200,200);
+		padding-bottom: 10px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+
+	main h3{
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-decoration: underline;
+	}
+
+	@media screen and (max-width: 800px) {
+		main{
+			flex-direction: column;
+		}
+
+		.coluna{
+			width: 100%;
+			padding: 0;
+			margin-left: 0;
+		}
+		nav{
+			display: none;
+		}
+	}
+	@media screen and (max-width: 1000px) {
+		nav{
+			font-size: 12px;
+		}
+		.linkMenu{
+			width: 70px;
+		}
+	}
+</style>
+<body>
+	<header>
+		<div>
+			<div id="cabeca">
+				<span class="material-icons tamanho2">
+					settings
+				</span>
+				<span class="material-icons tamanho2">
+					edit
+				</span>
+				<span class="material-icons tamanho2">
+					settings
+				</span>
+				<span class="material-icons tamanho2">
+					edit
+				</span>
+			</div>
+			<div id="cabeca-escrita">
+				<div id="logo">
+					<img id="uem" src="img/uem.png" alt="">
+					<p>UEM/CNPQ</p>
+				</div>
+				<div id="logo-desc">
+					<p>Grupo de Pesquisa</p>
+					<p>Interação e Escrita</p>
+				</div>
+
+			</div>
+
+			<div></div>
+		</div>
+		<nav>
+			<ul id="itensMenus">
+                <li class="imenu">
+                	<a class="linkMenu" href="" title="grupo de pesquisa: Interaçao e Escrita - Uem - Início" >In&iacute;cio</a>
+                </li>
+                <li class="imenu">
+                	<a class="linkMenu" href="" title="grupo de pesquisa: Interaçao e Escrita - Uem - Projetos em andamento" >Projetos em andamento</a>
+                </li>
+                <li class="imenu">
+                	<a class="linkMenu" href="" title="grupo de pesquisa: Interaçao e Escrita - Uem - Projetos Concluídos" >Projetos Conclu&iacute;dos</a>
+                </li>
+                <li class="imenu">
+                	<a class="linkMenu" href="" title="grupo de pesquisa: Interaçao e Escrita - Uem - Publicações">Publica&ccedil;&otilde;es</a>
+                </li>
+                <li class="imenu">
+                	<a class="linkMenu" href="" title="grupo de pesquisa: Interaçao e Escrita - Uem - Dissertações">Disserta&ccedil;&otilde;es</a>
+                </li>
+                <li class="imenu">
+                	<a class="linkMenu" href="" title="grupo de pesquisa: Interaçao e Escrita - Uem - Teses">Teses</a>
+                </li>
+                <li class="imenu">
+                	<a class="linkMenu" href="" title="grupo de pesquisa: Interaçao e Escrita - Uem - Eventos">Eventos</a>
+                </li>
+                <li class="imenu">
+                	<a class="linkMenu" href="" title="grupo de pesquisa: Interaçao e Escrita - Uem - contato" >Contato</a>
+                </li>
+                <li class="imenu">
+                	<a class="linkMenu" href="" title="grupo de pesquisa: Interaçao e Escrita - Uem - fotos">Fotos</a>
+                </li>
+            </ul>
+		</nav>
+	</header>
+	<main>
+		<div class="coluna">
+			<h2>Apresentação</h2>
+			<p style="text-align: justify;">
+				O Grupo de Pesquisa Interação e Escrita é formado por pesquisadores de várias Instituições de Ensino Superior do Paraná, preocupados com a escrita em situação de ensino e aprendizagem de línguas, nas suas mais variadas manifestações. Compõem o grupo professores e pesquisadores de ensino superior, ligados a programas de pós-graduação (stricto e lato sensu), alunos de pós-graduação e de graduação. As pesquisas desenvolvidas apresentam uma base teórica comum que é o sócio-interacionismo, a partir da perspectiva de Vygotsky e Bakhtin e toda a literatura dela decorrente, no Brasil. Além dessa abordagem, também se empregam os princípios do interacionismo sócio-discursivo, com maior representatividade em Bronckart. São interesses temáticos: o ensino, a aquisição e o desenvolvimento da escrita, envolvendo-se a leitura, a produção de textos e a análise linguística, como eixos norteadores, primários e pertinentes, no ensino básico e no ensino superior, especificamente na formação de professores de língua materna e língua estrangeira, incluindo-se o material didático, as abordagens, os procedimentos e as metodologias empregadas. Além disso, são desenvolvidas pesquisas que estudam a utilização e a posição da escrita em situações sociais definidas.
+			</p>
+			<h2>Equipe</h2>
+			<h3>Cordenador</h3>
+			<p>
+				Dr. Renilson José Menegassi
+			</p>
+			<h3>Vice Cordenador</h3>
+			<p>
+				Dra. Maria Adelaide de Freitas
+			</p>
+			<h3>Secretárias</h3>
+			<p>
+				Ms. Ângela Francine Fuza
+			</p>
+			<p>
+				Ms. Rafaela de Cássia Franzoi
+			</p>
+		</div>
+		<div class="coluna margin-left">
+			<h3>Pesquisadores</h3>
+			<p>
+				Ms. Ângela Francine Fuza
+			</p>
+			<p>
+				Ms. Carmen Ilma Belincanta Borghi
+			</p>
+			<p>
+				Dra. Cláudia Valéria Dona Hila
+			</p>
+			<p>
+				Ms. Cristiane Malinoski Pianaro Angelo
+			</p>
+			<p>
+				Dra. Flávia Zanutto
+			</p>
+			<p>
+				Ms. Ivanize Ribeiro de Souza
+			</p>
+			<p>
+				Ms. Lílian Cristina Buzato Ritter
+			</p>
+			<p>
+				Ms. Luciana Cabrini Simões Calvo
+			</p>
+			<p>
+				Ms. Márcia Cristina Greco Ohuschi
+			</p>
+			<p>
+				Dra. Margarida da Silveira Corsi
+			</p>
+			<p>
+				Ms. Marilice Pompeu da Silva
+			</p>
+			<p>
+				Ms. Marilúcia dos Santos Domingos Striquer
+			</p>
+			<p>
+				Dr. Neil Armstrong Franco de Oliveira
+			</p>
+			<p>
+				Dra. Neiva Maria Jung
+			</p>
+			<p>
+				Ms. Paulo Cezar Rodrigues
+			</p>
+			<p>
+				Ms. Rafaela de Cássia Franzoi
+			</p>
+			<p>
+				Ms. Rubia Mara Bragagnollo
+			</p>
+			<p>
+				Ms. Ruth Ceccon Barreiros
+			</p>
+			<p>
+				Ms. Silvia Regina Emiliano
+			</p>
+			<p>
+				Ms. Wilsilene Rodrigues Gatto
+			</p>
+			<h3>Estudantes</h3>
+			<p>
+				Adélia Aparecida Pereira da Silva Rodrigues
+			</p>
+			<p>
+				Aline Aparecida da Silva
+			</p>
+			<p>
+				Ana Maria da Silva
+			</p>
+			<p>
+				Débora Sodré Esper
+			</p>
+			<p>
+				Erika Polessi
+			</p>
+			<p>
+				Guilherme Rocha Duran
+			</p>
+			<p>
+				Marli Aparecida Pedro Duque
+			</p>
+			<p>
+				Natália Gonçalves Moterani
+			</p>
+			<p>
+				Pricila Gaffuri
+			</p>
+			<h3>Links</h3>
+			<a href="">XX CELLIP – Seminário do Cellip - Centro de Estudos Linguísticos e Literários do Paraná.</a>
+		</div>
+	</main>
+	<footer>
+		<p>
+			Todos os Direitos Reservados - www.escrita.uem.br - 2009
+		</p>
+	</footer>
+</body>
+</html>

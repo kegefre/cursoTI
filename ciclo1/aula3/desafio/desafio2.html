@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desafio 2</title>
+</head>
+<style>
+	body{
+		margin: 0;
+	}
+
+	header, footer{
+		width: 100%;
+		height: 60px;
+		border-bottom: 1px solid black;
+		background-color: black;
+		position: fixed;
+	}
+	header{
+		top:0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	footer{
+		border-bottom: 0;
+		height: 60px;
+		border-top: 1px solid black;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	main{
+		width:100%;
+		height: auto;
+		margin-top: 60px;
+	}
+
+	#content{
+		width: 500px;
+		height: 300px;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+	}
+
+	.coluna1{
+		width: 50%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.coluna2{
+		width: 50%;
+		height: auto;
+		border-left: 2px dashed black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: verdana, corsiva, sans-serif;
+
+	}
+
+	.coluna2 input[type=text]{
+		border-radius: 5px;
+		padding: 5px;
+		outline: none;
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+
+	.coluna2 input[type=submit]{
+		border-radius: 5px;
+		padding: 5px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		background-image: linear-gradient(to right top,rgb(255,255,0),rgb(255,100,100),rgb(255,255,0));
+	}
+
+	form{
+		padding: 10px;
+	}
+
+	footer p{
+		color: white;
+		font-family: verdana, cursive, sans-serif;
+		font-size: 18px;
+	}
+
+	nav{
+		width: 400px;
+	}
+	nav ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+	}
+
+	nav li{
+		font-family: verdana, arial, sans-serif;
+		padding: 2px;
+		margin-top: 2px;
+		width: 120px;
+	}
+
+	nav a{
+		text-decoration: none;
+		color: #fff;
+		width: 100px;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2px;
+		border-radius: 15px;
+	}
+
+	header p{
+		font-family: verdana,cursive,sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+		color: white;
+	}
+	.selecionado{
+		background-color: orange;
+	}
+
+
+
+</style>
+<body>
+	<header>
+		<p>
+			LOGO
+		</p>
+		<nav>
+			<ul>
+				<li><a class="selecionado" href="">Home</a></li>
+				<li><a href="">Contato</a></li>
+				<li><a href="">Sobre</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="content">
+			<div class="coluna1">
+				<p>
+					"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit pariatur officia magnam ullam quod placeat inventore dolorum, cupiditate a laboriosam nesciunt obcaecati dolorem tenetur praesentium nemo, cum mollitia, quidem, debitis."
+				</p>
+			</div>
+			<div class="coluna2">
+				<form>
+					<label>Digite seu e-mail aqui<input type="text" placeholder="e-mail"></label>
+					<input type="submit" name="">
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>by TI ACADENY</p>
+	</footer>
+</body>
+</html>
