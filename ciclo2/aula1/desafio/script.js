@@ -1,0 +1,15 @@
+var numeroOculto=5;
+var nome = prompt("Digite seu nome.");
+var numero = parseInt(prompt(nome + " digite um número."));
+document.write("1. Seja bem vindo..: " + nome + "<br>");
+document.write("2. Você digitou o número..: (" + numero + ")<br>");
+var booleano = (numero == numeroOculto);
+document.write("3. O retorno da comparação booleana é ..: " + booleano + "<br>");
+var soma = numero + numeroOculto;
+document.write("4. A soma dos valores é..: " + soma + "<br>");
+var subtracao = numero - numeroOculto;
+document.write("5. A subtração dos valores é..: " + subtracao + "<br>");
+var resto = numero % numeroOculto;
+document.write("6. O resto da divisão é de..: " + resto + "<br>");
+var quadrado = numero*numero;
+document.write("7. O quadrado do número digitado é..:" + quadrado + "<br>");
