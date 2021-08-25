@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="site2.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<h1>Me Acha!</h1>
+		<h2>Encontre um endereço pelo número de CEP</h2>
+		<div class="content-base flex justify-content">
+			<div id="logo-principal" class="flex justify-content">
+				<span class="material-icons logo">
+					travel_explore
+				</span>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="conteudo-geral" class="flex justify-content">
+			<div class="box-custom flex justify-content">
+				<form>
+					<label for="cep">CEP
+						<input type="text" name="cep" required>
+					</label>
+					<label for="rua">RUA
+						<input type="text" name="rua" readonly="">
+					</label>
+					<label for="bairro">BAIRRO
+						<input type="text" name="bairro" readonly="">
+					</label>
+					<label for="cidade">CIDADE
+						<input type="text" name="cidade" readonly="">
+					</label>
+					<label for="uf">UF
+						<input type="text" name="uf" readonly="">
+					</label>
+					<div class="display-btn flex justify-content">
+						<input class="btn" type="button" value="BUSCAR">
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+</body>
+</html>
