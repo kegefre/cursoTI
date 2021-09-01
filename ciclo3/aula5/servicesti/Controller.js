@@ -215,7 +215,7 @@ app.put('/editarpedido', (req,res)=>{
     });
 });
 
-//exercicio aula 5
+//exercicio aula 5 ***********
 app.get('/servicosclientes', async (req,res)=>{
     await cliente.findByPk(req.body.id, {
         include: [{all: true}],
@@ -223,6 +223,9 @@ app.get('/servicosclientes', async (req,res)=>{
         return res.json({cliente});
     });
 });
+
+
+//************************
 
 app.get('/excluircliente', async(req,res)=>{
     await cliente.destroy({
@@ -246,6 +249,36 @@ app.delete('/apagarcliente/:id',(req,res)=>{
         });
  });
 
+
+ // desafio aula 4
+
+ app.get('/pedidoscliente/:ClienteId', async (req, res)=>{
+    await pedido.findAll({
+        where: {
+            'ClienteId': req.params.ClienteId,
+        },
+    }).then(function(pedido){
+        res.json({pedido})
+    });
+});
+
+app.put('/editarpedidoporcliente/:ClienteId', (req,res)=>{
+    pedido.update(req.body,{
+        where: {
+            ClienteId: req.params.ClienteId
+        },
+    }).then(()=>{
+        return res.json({
+            error: false,
+            message: "Pedido modificado com sucesso.",
+        });
+    }).catch((erro)=>{
+        return res.status(400).json({
+            error: true,
+            message: "Não foi possivel modificar o pedido."
+        });
+    });
+});
 
 let port=process.env.PORT || 3000;
 
