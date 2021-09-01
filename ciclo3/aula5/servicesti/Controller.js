@@ -224,7 +224,39 @@ app.get('/servicosclientes', async (req,res)=>{
     });
 });
 
+//usar rota para consultar cliente e edita-lo pelo metodo put
+app.put('/editarcliente/:id', (req,res)=>{
+    cliente.update(req.body,{
+        where: {id: req.params.id}
+    }).then(function(){
+        return res.json({
+            error: false,
+            message: "Cliente alterado com sucesso."
+        });
+    }).catch(function(erro){
+        return res.status(400).json({
+            error: true,
+            message: "Erro na alteração do cliente."
+        });
+    });
+});
 
+//usar rota para consultar pedidos e edita-lo pelo metodo put
+app.put('/editarpedido/:id', (req,res)=>{
+    pedido.update(req.body,{
+        where: {id: req.params.id}
+    }).then(function(){
+        return res.json({
+            error: false,
+            message: "Pedido alterado com sucesso."
+        });
+    }).catch(function(erro){
+        return res.status(400).json({
+            error: true,
+            message: "Erro na alteração do pedido."
+        });
+    });
+});
 //************************
 
 app.get('/excluircliente', async(req,res)=>{
